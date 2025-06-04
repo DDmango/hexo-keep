@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="BDONG">
+    
+    <title>
+        
+            新手教程（1）！ |
+        
+        BDONG
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/font/css/brands.min.css">
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"BDONG","author":"BDONG","avatar":"https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg","logo":"https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg","favicon":"https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg"},"menu":{"home":"/","archives":"/archives","about":"/about"},"first_screen":{"enable":true,"background_img":"https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg","background_img_dark":"https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg","description":"继续我的交易生活！","hitokoto":false},"social_contact":{"enable":true,"links":{"github":null,"weixin":"img | /images/wechat.png","qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null,"注册交易账号":"img | /images/exness.svg"}},"scroll":{"progress_bar":true,"percent":false,"hide_header":true},"home":{"announcement":"上面添加博主微信！","category":true,"tag":true,"post_datetime":"updated || fa-solid fa-thumbs-up"},"post":{"author_badge":{"enable":true,"level_badge":false,"custom_badge":"博主大大"},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":true,"reward":{"enable":true,"img_link":"/images/wechatpay.jpg","text":"请作者喝咖啡","icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.39"},"waline":{"server_url":null,"reaction":false,"version":"3.3.2"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2019,"word_count":true,"site_deploy":{"enable":true,"provider":"aliyun","url":"/"},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{"icons":{"注册交易账号":{"svg":"<svg t=\"1749056243030\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1524\" width=\"200\" height=\"200\"><path d=\"M452.096 458.752c-108.032 0-196.096-85.504-196.096-190.976s88.064-190.464 196.096-190.464c108.032 0 196.096 85.504 196.096 190.976s-87.552 190.464-196.096 190.464z m0-321.536c-74.752 0-135.168 58.368-135.168 130.048 0 72.192 60.928 130.048 135.168 130.048s135.168-58.368 135.168-130.048-60.416-130.048-135.168-130.048z m378.368 718.848c-16.384 0-30.208-13.824-30.208-30.208 0-130.56-87.552-270.848-333.824-270.848-161.28 0-333.824 71.168-333.824 270.848 0 16.384-13.824 30.208-30.208 30.208s-30.208-13.824-30.208-30.208c0-104.448 40.96-190.976 118.272-249.856 70.144-53.248 164.864-81.408 275.968-81.408s205.824 28.16 275.968 81.408c77.312 59.392 118.272 145.92 118.272 249.856 0 16.384-13.824 30.208-30.208 30.208z\" p-id=\"1525\"></path><path d=\"M837.632 859.648h-743.424c-12.288 0-22.528-10.24-22.528-22.528v-9.728c0-12.288 10.24-22.528 22.528-22.528h743.424c12.288 0 22.528 10.24 22.528 22.528v9.728c0 12.8-10.24 22.528-22.528 22.528zM925.184 308.736h-180.736c-15.872 0-29.184-13.312-29.184-29.184s13.312-29.184 29.184-29.184h180.736c15.872 0 29.184 13.312 29.184 29.184-0.512 16.384-13.312 29.184-29.184 29.184z\" p-id=\"1526\"></path><path d=\"M863.744 189.44v180.736c0 15.872-13.312 29.184-29.184 29.184s-29.184-12.8-29.184-29.184V189.44c0-15.872 13.312-29.184 29.184-29.184s29.184 13.312 29.184 29.184z\" p-id=\"1527\"></path></svg>","link":"https://one.exnesstrack.org/a/ru4vqx5izx"}}},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               BDONG
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        新手教程（1）！
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://s3.bmp.ovh/imgs/2025/05/14/796ea7137f3fa1b9.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">BDONG</span>
+                                
+                                    <span class="author-badge">博主大大</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2025-06-05 00:38:38</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Thu Jun 05 2025 02:14:05 GMT+0800">2025-06-05 02:14:05</span>
+                </span>
+            
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <hr>
+<h1 id="1-0注册一个模拟账号"><a href="#1-0注册一个模拟账号" class="headerlink" title="1.0注册一个模拟账号"></a>1.0注册一个模拟账号</h1><p>第一次接触这个还是要模拟熟悉的，不可以马上就用真实号操作！</p>
+<p>点击下面注册一个模拟账号，（用平时自己常用的邮箱）</p>
+<a target="_blank" rel="noopener" href="https://one.exnesstrack.org/intl/zh/a/ru4vqx5izx">
+          <p> 点击这里注册 </p>
+        </a>
+
+<h1 id="—-1"><a href="#—-1" class="headerlink" title="—-1"></a>—-1</h1><a target="_blank" rel="noopener" href="https://one.exnesstrack.org/intl/zh/a/ru4vqx5izx">
+          <img    
+                       lazyload
+                       alt="image"
+                       data-src="https://s3.bmp.ovh/imgs/2025/06/05/3124184d596a42ff.png"
+                         width="350" height="180"  
+                 >
+        </a>
+
+
+<h2 id="注册登录后点击添加账号，选择标准账号，再选择模拟账号！"><a href="#注册登录后点击添加账号，选择标准账号，再选择模拟账号！" class="headerlink" title="注册登录后点击添加账号，选择标准账号，再选择模拟账号！"></a>注册登录后点击添加账号，选择标准账号，再选择模拟账号！</h2><h1 id="—-1-1"><a href="#—-1-1" class="headerlink" title="—-1.1"></a>—-1.1</h1><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/874e2fb20f9529a8.jpg' width="280" />
+
+<h1 id="—-1-2"><a href="#—-1-2" class="headerlink" title="—-1.2"></a>—-1.2</h1><h2 id="注册好了之后。点击模拟账号，点图上箭头"><a href="#注册好了之后。点击模拟账号，点图上箭头" class="headerlink" title="注册好了之后。点击模拟账号，点图上箭头"></a>注册好了之后。点击模拟账号，点图上箭头</h2><h1 id="—-1-3"><a href="#—-1-3" class="headerlink" title="—-1.3"></a>—-1.3</h1><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/80153cb2e40ad380.jpg' width="280" />
+
+<h1 id="—-1-4"><a href="#—-1-4" class="headerlink" title="—-1.4"></a>—-1.4</h1><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/67c07bff5ebe50d5.png' width="280" />
+
+<h1 id="—-1-5如图所示"><a href="#—-1-5如图所示" class="headerlink" title="—-1.5如图所示"></a>—-1.5如图所示</h1><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/f33ff870e77b8a69.jpg' width="280" />
+
+<h2 id="2-0-再到下载MT5"><a href="#2-0-再到下载MT5" class="headerlink" title="2.0 再到下载MT5"></a>2.0 再到下载MT5</h2><a target="_blank" rel="noopener" href="https://www.plotioglobal.com.tw/doc/file_dl/metatrader5.apk">
+          <p> 点击这里这里下载 </p>
+        </a>
+
+<h2 id="或者在你的登录界面划到最底下！"><a href="#或者在你的登录界面划到最底下！" class="headerlink" title="或者在你的登录界面划到最底下！"></a>或者在你的登录界面划到最底下！</h2><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/42dd35c60917b7f9.jpg' width="280" />
+
+<h2 id="3-0登录MT5"><a href="#3-0登录MT5" class="headerlink" title="3.0登录MT5"></a>3.0登录MT5</h2><h2 id="3-1点击MT5左上角，然后点击右上角加号如图"><a href="#3-1点击MT5左上角，然后点击右上角加号如图" class="headerlink" title="3.1点击MT5左上角，然后点击右上角加号如图"></a>3.1点击MT5左上角，然后点击右上角加号如图</h2><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/61cd99aad86fb0be.jpg' width="280" />
+
+<h2 id="3-2然后搜索exness点击下面那个！"><a href="#3-2然后搜索exness点击下面那个！" class="headerlink" title="3.2然后搜索exness点击下面那个！"></a>3.2然后搜索exness点击下面那个！</h2><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/e9094b9b97ee82d7.png' width="280" />
+
+<h1 id="3-3然后填入1-5中图的信息既可以登录了（注意是填你自己刚刚注册的模拟账号）"><a href="#3-3然后填入1-5中图的信息既可以登录了（注意是填你自己刚刚注册的模拟账号）" class="headerlink" title="3.3然后填入1.5中图的信息既可以登录了（注意是填你自己刚刚注册的模拟账号）"></a>3.3然后填入1.5中图的信息既可以登录了（注意是填你自己刚刚注册的模拟账号）</h1><img src = 'https://s3.bmp.ovh/imgs/2025/05/14/c6eccfe0f3e2b068.jpg' width="280" />
+
+<h2 id="4-0添加xauusd"><a href="#4-0添加xauusd" class="headerlink" title="4.0添加xauusd"></a>4.0添加xauusd</h2><h2 id="4-1点行情，右上角-号，添加xauusd（黄金代码）"><a href="#4-1点行情，右上角-号，添加xauusd（黄金代码）" class="headerlink" title="4.1点行情，右上角+号，添加xauusd（黄金代码）"></a>4.1点行情，右上角+号，添加xauusd（黄金代码）</h2><img src = 'https://s3.bmp.ovh/imgs/2025/05/15/de3b40a856ed59b2.jpg' width="280" >
+
+<h2 id="4-2点交易，右上角红蓝号-跳出来画圈的。点击右边是买涨，价格涨上去你就赚。"><a href="#4-2点交易，右上角红蓝号-跳出来画圈的。点击右边是买涨，价格涨上去你就赚。" class="headerlink" title="4.2点交易，右上角红蓝号,跳出来画圈的。点击右边是买涨，价格涨上去你就赚。"></a>4.2点交易，右上角红蓝号,跳出来画圈的。点击右边是买涨，价格涨上去你就赚。</h2><h2 id="点击左边是买跌，价格降下来就赚。"><a href="#点击左边是买跌，价格降下来就赚。" class="headerlink" title="点击左边是买跌，价格降下来就赚。"></a>点击左边是买跌，价格降下来就赚。</h2><h2 id="新手中间保持0-01就好了，这是手数，买0-01手，以后熟练了可以再增加！"><a href="#新手中间保持0-01就好了，这是手数，买0-01手，以后熟练了可以再增加！" class="headerlink" title="新手中间保持0.01就好了，这是手数，买0.01手，以后熟练了可以再增加！"></a>新手中间保持0.01就好了，这是手数，买0.01手，以后熟练了可以再增加！</h2><img src = 'https://s3.bmp.ovh/imgs/2025/05/15/c131fc134d0c5185.jpg' width="280" >
+
+<h2 id="5-0最后点交易，长按订单点平仓就是结束这笔订单，完成这笔交易！"><a href="#5-0最后点交易，长按订单点平仓就是结束这笔订单，完成这笔交易！" class="headerlink" title="5.0最后点交易，长按订单点平仓就是结束这笔订单，完成这笔交易！"></a>5.0最后点交易，长按订单点平仓就是结束这笔订单，完成这笔交易！</h2><img src = 'https://s3.bmp.ovh/imgs/2025/05/15/f775f0a40900ed94.jpg' width="280" >
+
+                    
+                </div>
+
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                新手教程（1）！
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2025/06/05/post/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    作者
+                </div>
+                <div class="content">BDONG</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    发布于
+                </div>
+                <div class="content">2025-06-05 00:38</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    许可
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="复制版权信息" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到 QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="分享到微信"
+            data-tooltip-img-tip="微信扫一扫"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到微博"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
+                        
+                    </div>
+                </div>
+
+                
+                    
+
+<div class="reward-author-container border-box flex-center">
+    <div class="reward-btn border-box flex-center tooltip tooltip-img"
+            data-tooltip-img-url="/images/wechatpay.jpg"
+            data-tooltip-img-trigger="click"
+            data-tooltip-img-style="top: -6px;"
+    >
+        <i class="fa-solid fa-gift"></i>&nbsp;请作者喝咖啡
+    </div>
+</div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2025/06/05/hello-world/"
+                                   title="Hello World"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Hello World</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-0%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7"><span class="nav-number">1.</span> <span class="nav-text">1.0注册一个模拟账号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1"><span class="nav-number">2.</span> <span class="nav-text">—-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95%E5%90%8E%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%EF%BC%8C%E9%80%89%E6%8B%A9%E6%A0%87%E5%87%86%E8%B4%A6%E5%8F%B7%EF%BC%8C%E5%86%8D%E9%80%89%E6%8B%A9%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7%EF%BC%81"><span class="nav-number">2.1.</span> <span class="nav-text">注册登录后点击添加账号，选择标准账号，再选择模拟账号！</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-1"><span class="nav-number">3.</span> <span class="nav-text">—-1.1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-2"><span class="nav-number">4.</span> <span class="nav-text">—-1.2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E5%A5%BD%E4%BA%86%E4%B9%8B%E5%90%8E%E3%80%82%E7%82%B9%E5%87%BB%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7%EF%BC%8C%E7%82%B9%E5%9B%BE%E4%B8%8A%E7%AE%AD%E5%A4%B4"><span class="nav-number">4.1.</span> <span class="nav-text">注册好了之后。点击模拟账号，点图上箭头</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-3"><span class="nav-number">5.</span> <span class="nav-text">—-1.3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-4"><span class="nav-number">6.</span> <span class="nav-text">—-1.4</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-5%E5%A6%82%E5%9B%BE%E6%89%80%E7%A4%BA"><span class="nav-number">7.</span> <span class="nav-text">—-1.5如图所示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-0-%E5%86%8D%E5%88%B0%E4%B8%8B%E8%BD%BDMT5"><span class="nav-number">7.1.</span> <span class="nav-text">2.0 再到下载MT5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%96%E8%80%85%E5%9C%A8%E4%BD%A0%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E5%88%92%E5%88%B0%E6%9C%80%E5%BA%95%E4%B8%8B%EF%BC%81"><span class="nav-number">7.2.</span> <span class="nav-text">或者在你的登录界面划到最底下！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-0%E7%99%BB%E5%BD%95MT5"><span class="nav-number">7.3.</span> <span class="nav-text">3.0登录MT5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1%E7%82%B9%E5%87%BBMT5%E5%B7%A6%E4%B8%8A%E8%A7%92%EF%BC%8C%E7%84%B6%E5%90%8E%E7%82%B9%E5%87%BB%E5%8F%B3%E4%B8%8A%E8%A7%92%E5%8A%A0%E5%8F%B7%E5%A6%82%E5%9B%BE"><span class="nav-number">7.4.</span> <span class="nav-text">3.1点击MT5左上角，然后点击右上角加号如图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2%E7%84%B6%E5%90%8E%E6%90%9C%E7%B4%A2exness%E7%82%B9%E5%87%BB%E4%B8%8B%E9%9D%A2%E9%82%A3%E4%B8%AA%EF%BC%81"><span class="nav-number">7.5.</span> <span class="nav-text">3.2然后搜索exness点击下面那个！</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3%E7%84%B6%E5%90%8E%E5%A1%AB%E5%85%A51-5%E4%B8%AD%E5%9B%BE%E7%9A%84%E4%BF%A1%E6%81%AF%E6%97%A2%E5%8F%AF%E4%BB%A5%E7%99%BB%E5%BD%95%E4%BA%86%EF%BC%88%E6%B3%A8%E6%84%8F%E6%98%AF%E5%A1%AB%E4%BD%A0%E8%87%AA%E5%B7%B1%E5%88%9A%E5%88%9A%E6%B3%A8%E5%86%8C%E7%9A%84%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">3.3然后填入1.5中图的信息既可以登录了（注意是填你自己刚刚注册的模拟账号）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-0%E6%B7%BB%E5%8A%A0xauusd"><span class="nav-number">8.1.</span> <span class="nav-text">4.0添加xauusd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1%E7%82%B9%E8%A1%8C%E6%83%85%EF%BC%8C%E5%8F%B3%E4%B8%8A%E8%A7%92-%E5%8F%B7%EF%BC%8C%E6%B7%BB%E5%8A%A0xauusd%EF%BC%88%E9%BB%84%E9%87%91%E4%BB%A3%E7%A0%81%EF%BC%89"><span class="nav-number">8.2.</span> <span class="nav-text">4.1点行情，右上角+号，添加xauusd（黄金代码）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2%E7%82%B9%E4%BA%A4%E6%98%93%EF%BC%8C%E5%8F%B3%E4%B8%8A%E8%A7%92%E7%BA%A2%E8%93%9D%E5%8F%B7-%E8%B7%B3%E5%87%BA%E6%9D%A5%E7%94%BB%E5%9C%88%E7%9A%84%E3%80%82%E7%82%B9%E5%87%BB%E5%8F%B3%E8%BE%B9%E6%98%AF%E4%B9%B0%E6%B6%A8%EF%BC%8C%E4%BB%B7%E6%A0%BC%E6%B6%A8%E4%B8%8A%E5%8E%BB%E4%BD%A0%E5%B0%B1%E8%B5%9A%E3%80%82"><span class="nav-number">8.3.</span> <span class="nav-text">4.2点交易，右上角红蓝号,跳出来画圈的。点击右边是买涨，价格涨上去你就赚。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%82%B9%E5%87%BB%E5%B7%A6%E8%BE%B9%E6%98%AF%E4%B9%B0%E8%B7%8C%EF%BC%8C%E4%BB%B7%E6%A0%BC%E9%99%8D%E4%B8%8B%E6%9D%A5%E5%B0%B1%E8%B5%9A%E3%80%82"><span class="nav-number">8.4.</span> <span class="nav-text">点击左边是买跌，价格降下来就赚。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E6%89%8B%E4%B8%AD%E9%97%B4%E4%BF%9D%E6%8C%810-01%E5%B0%B1%E5%A5%BD%E4%BA%86%EF%BC%8C%E8%BF%99%E6%98%AF%E6%89%8B%E6%95%B0%EF%BC%8C%E4%B9%B00-01%E6%89%8B%EF%BC%8C%E4%BB%A5%E5%90%8E%E7%86%9F%E7%BB%83%E4%BA%86%E5%8F%AF%E4%BB%A5%E5%86%8D%E5%A2%9E%E5%8A%A0%EF%BC%81"><span class="nav-number">8.5.</span> <span class="nav-text">新手中间保持0.01就好了，这是手数，买0.01手，以后熟练了可以再增加！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-0%E6%9C%80%E5%90%8E%E7%82%B9%E4%BA%A4%E6%98%93%EF%BC%8C%E9%95%BF%E6%8C%89%E8%AE%A2%E5%8D%95%E7%82%B9%E5%B9%B3%E4%BB%93%E5%B0%B1%E6%98%AF%E7%BB%93%E6%9D%9F%E8%BF%99%E7%AC%94%E8%AE%A2%E5%8D%95%EF%BC%8C%E5%AE%8C%E6%88%90%E8%BF%99%E7%AC%94%E4%BA%A4%E6%98%93%EF%BC%81"><span class="nav-number">8.6.</span> <span class="nav-text">5.0最后点交易，长按订单点平仓就是结束这笔订单，完成这笔交易！</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;<span>2019</span>&nbsp;-&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">BDONG</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+                <a target="_blank" rel="nofollow" href="/">
+            
+            本站由 <span class="tooltip" data-tooltip-content="阿里云"><img src="/images/brands/aliyun.png"></span> 提供部署服务
+            
+                </a>
+            
+        </div>
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-0%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7"><span class="nav-number">1.</span> <span class="nav-text">1.0注册一个模拟账号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1"><span class="nav-number">2.</span> <span class="nav-text">—-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95%E5%90%8E%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%EF%BC%8C%E9%80%89%E6%8B%A9%E6%A0%87%E5%87%86%E8%B4%A6%E5%8F%B7%EF%BC%8C%E5%86%8D%E9%80%89%E6%8B%A9%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7%EF%BC%81"><span class="nav-number">2.1.</span> <span class="nav-text">注册登录后点击添加账号，选择标准账号，再选择模拟账号！</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-1"><span class="nav-number">3.</span> <span class="nav-text">—-1.1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-2"><span class="nav-number">4.</span> <span class="nav-text">—-1.2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E5%A5%BD%E4%BA%86%E4%B9%8B%E5%90%8E%E3%80%82%E7%82%B9%E5%87%BB%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7%EF%BC%8C%E7%82%B9%E5%9B%BE%E4%B8%8A%E7%AE%AD%E5%A4%B4"><span class="nav-number">4.1.</span> <span class="nav-text">注册好了之后。点击模拟账号，点图上箭头</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-3"><span class="nav-number">5.</span> <span class="nav-text">—-1.3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-4"><span class="nav-number">6.</span> <span class="nav-text">—-1.4</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E2%80%94-1-5%E5%A6%82%E5%9B%BE%E6%89%80%E7%A4%BA"><span class="nav-number">7.</span> <span class="nav-text">—-1.5如图所示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-0-%E5%86%8D%E5%88%B0%E4%B8%8B%E8%BD%BDMT5"><span class="nav-number">7.1.</span> <span class="nav-text">2.0 再到下载MT5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%96%E8%80%85%E5%9C%A8%E4%BD%A0%E7%9A%84%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E5%88%92%E5%88%B0%E6%9C%80%E5%BA%95%E4%B8%8B%EF%BC%81"><span class="nav-number">7.2.</span> <span class="nav-text">或者在你的登录界面划到最底下！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-0%E7%99%BB%E5%BD%95MT5"><span class="nav-number">7.3.</span> <span class="nav-text">3.0登录MT5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1%E7%82%B9%E5%87%BBMT5%E5%B7%A6%E4%B8%8A%E8%A7%92%EF%BC%8C%E7%84%B6%E5%90%8E%E7%82%B9%E5%87%BB%E5%8F%B3%E4%B8%8A%E8%A7%92%E5%8A%A0%E5%8F%B7%E5%A6%82%E5%9B%BE"><span class="nav-number">7.4.</span> <span class="nav-text">3.1点击MT5左上角，然后点击右上角加号如图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2%E7%84%B6%E5%90%8E%E6%90%9C%E7%B4%A2exness%E7%82%B9%E5%87%BB%E4%B8%8B%E9%9D%A2%E9%82%A3%E4%B8%AA%EF%BC%81"><span class="nav-number">7.5.</span> <span class="nav-text">3.2然后搜索exness点击下面那个！</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3%E7%84%B6%E5%90%8E%E5%A1%AB%E5%85%A51-5%E4%B8%AD%E5%9B%BE%E7%9A%84%E4%BF%A1%E6%81%AF%E6%97%A2%E5%8F%AF%E4%BB%A5%E7%99%BB%E5%BD%95%E4%BA%86%EF%BC%88%E6%B3%A8%E6%84%8F%E6%98%AF%E5%A1%AB%E4%BD%A0%E8%87%AA%E5%B7%B1%E5%88%9A%E5%88%9A%E6%B3%A8%E5%86%8C%E7%9A%84%E6%A8%A1%E6%8B%9F%E8%B4%A6%E5%8F%B7%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">3.3然后填入1.5中图的信息既可以登录了（注意是填你自己刚刚注册的模拟账号）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-0%E6%B7%BB%E5%8A%A0xauusd"><span class="nav-number">8.1.</span> <span class="nav-text">4.0添加xauusd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1%E7%82%B9%E8%A1%8C%E6%83%85%EF%BC%8C%E5%8F%B3%E4%B8%8A%E8%A7%92-%E5%8F%B7%EF%BC%8C%E6%B7%BB%E5%8A%A0xauusd%EF%BC%88%E9%BB%84%E9%87%91%E4%BB%A3%E7%A0%81%EF%BC%89"><span class="nav-number">8.2.</span> <span class="nav-text">4.1点行情，右上角+号，添加xauusd（黄金代码）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2%E7%82%B9%E4%BA%A4%E6%98%93%EF%BC%8C%E5%8F%B3%E4%B8%8A%E8%A7%92%E7%BA%A2%E8%93%9D%E5%8F%B7-%E8%B7%B3%E5%87%BA%E6%9D%A5%E7%94%BB%E5%9C%88%E7%9A%84%E3%80%82%E7%82%B9%E5%87%BB%E5%8F%B3%E8%BE%B9%E6%98%AF%E4%B9%B0%E6%B6%A8%EF%BC%8C%E4%BB%B7%E6%A0%BC%E6%B6%A8%E4%B8%8A%E5%8E%BB%E4%BD%A0%E5%B0%B1%E8%B5%9A%E3%80%82"><span class="nav-number">8.3.</span> <span class="nav-text">4.2点交易，右上角红蓝号,跳出来画圈的。点击右边是买涨，价格涨上去你就赚。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%82%B9%E5%87%BB%E5%B7%A6%E8%BE%B9%E6%98%AF%E4%B9%B0%E8%B7%8C%EF%BC%8C%E4%BB%B7%E6%A0%BC%E9%99%8D%E4%B8%8B%E6%9D%A5%E5%B0%B1%E8%B5%9A%E3%80%82"><span class="nav-number">8.4.</span> <span class="nav-text">点击左边是买跌，价格降下来就赚。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E6%89%8B%E4%B8%AD%E9%97%B4%E4%BF%9D%E6%8C%810-01%E5%B0%B1%E5%A5%BD%E4%BA%86%EF%BC%8C%E8%BF%99%E6%98%AF%E6%89%8B%E6%95%B0%EF%BC%8C%E4%B9%B00-01%E6%89%8B%EF%BC%8C%E4%BB%A5%E5%90%8E%E7%86%9F%E7%BB%83%E4%BA%86%E5%8F%AF%E4%BB%A5%E5%86%8D%E5%A2%9E%E5%8A%A0%EF%BC%81"><span class="nav-number">8.5.</span> <span class="nav-text">新手中间保持0.01就好了，这是手数，买0.01手，以后熟练了可以再增加！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-0%E6%9C%80%E5%90%8E%E7%82%B9%E4%BA%A4%E6%98%93%EF%BC%8C%E9%95%BF%E6%8C%89%E8%AE%A2%E5%8D%95%E7%82%B9%E5%B9%B3%E4%BB%93%E5%B0%B1%E6%98%AF%E7%BB%93%E6%9D%9F%E8%BF%99%E7%AC%94%E8%AE%A2%E5%8D%95%EF%BC%8C%E5%AE%8C%E6%88%90%E8%BF%99%E7%AC%94%E4%BA%A4%E6%98%93%EF%BC%81"><span class="nav-number">8.6.</span> <span class="nav-text">5.0最后点交易，长按订单点平仓就是结束这笔订单，完成这笔交易！</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/utils.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/header-shrink.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/back2top.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/toggle-theme.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/code-block.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/main.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/libs/anime.min.js"></script>
+
+<!-- local search -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/local-search.min.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/lazyload.min.js"></script>
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/post-helper.min.js"></script>
+
+        <!-- toc -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/toc.min.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/copyright-info.min.js"></script>
+        
+
+        <!-- share -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/post/share.min.js"></script>
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.5/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
